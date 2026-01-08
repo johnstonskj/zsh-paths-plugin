@@ -131,10 +131,6 @@ paths_plugin_unload() {
     # Remove the global data variable.
     unset PATHS
 
-    # Remove self from fpath.
-    # shellcheck disable=SC2296
-    fpath=("${(@)fpath:#${0:A:h}}")
-
     # Remove this function.
     unfunction "paths_plugin_unload"
 }
