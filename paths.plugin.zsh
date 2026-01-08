@@ -1,4 +1,15 @@
 # -*- mode: sh; eval: (sh-set-shell "zsh") -*-
+#
+# Plugin Name: paths
+# Description: Simple functions for managing PATH, MANPATH and FPATH.
+# Repository: https://github.com/johnstonskj/zsh-paths-plugin
+#
+# Public variables:
+#
+# * `PATHS`; plugin-defined global associative array with the following keys:
+#   * `_PLUGIN_DIR`; the directory the plugin is sourced from.
+#   * `_FUNCTIONS`; a list of all functions defined by the plugin.
+#
 
 ############################################################################
 # Standard Setup Behavior
