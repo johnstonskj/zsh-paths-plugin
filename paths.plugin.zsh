@@ -1,8 +1,10 @@
 # -*- mode: sh; eval: (sh-set-shell "zsh") -*-
 #
-# @name paths
-# @brief Simple functions for managing PATH, MANPATH and FPATH.
-# @repository https://github.com/johnstonskj/zsh-paths-plugin
+# @name: paths
+# @brief: Simple functions for managing `PATH`, `MANPATH` and `FPATH`.
+# @repository: https://github.com/johnstonskj/zsh-paths-plugin
+# @version: 0.1.1
+# @license: MIT AND Apache-2.0
 #
 #
 
