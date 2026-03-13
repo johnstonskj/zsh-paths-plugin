@@ -15,7 +15,7 @@
 
 function path_append {
     if [[ ":${PATH}:" != *":${1}:"* ]]; then
-        export PATH=${PATH}:${1}
+        typeset -g PATH=${PATH}:${1}
     fi
 }
 @zplugins_remember_fn paths path_append
@@ -29,7 +29,7 @@ function path_append_if_exists {
 
 function path_prepend {
     if [[ ":${PATH}:" != *":${1}:"* ]]; then
-        export PATH="${1}:${PATH}"
+        typeset -g PATH="${1}:${PATH}"
     fi
 }
 @zplugins_remember_fn paths path_prepend
@@ -47,7 +47,7 @@ function path_prepend_if_exists {
 
 function man_path_append {
     if [[ ":$MANPATH:" != *":${1}:"* ]]; then
-        export MANPATH="${MANPATH}:${1}"
+        typeset -g MANPATH="${MANPATH}:${1}"
     fi
 }
 @zplugins_remember_fn paths man_path_append
@@ -66,7 +66,7 @@ function man_path_append_if_exists {
 
 function function_path_append {
     if [[ ":${FPATH}:" != *":${1}:"* ]]; then
-        export FPATH="${FPATH}:${1}"
+        typeset -g FPATH="${FPATH}:${1}"
     fi
 }
 @zplugins_remember_fn paths  function_path_append
